@@ -13,7 +13,7 @@ function reducer(state, action) {
     case 'reset':
       return {count: state.count =0 }
     case 'boom':
-      return {count: state.count =10000}
+      return {count: state.count +10000}
     default:
       return state 
   }

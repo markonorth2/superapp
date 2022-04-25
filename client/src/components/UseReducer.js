@@ -10,6 +10,8 @@ function reducer(state, action) {
       return {count: state.count *2 }
     case 'reset':
       return {count: state.count =0 }
+    case 'boom':
+      return {count: state.count =10000}
     default:
       return state 
   }
@@ -38,6 +40,9 @@ function UseReducer() {
   function reset(){
     dispatch({ type: 'reset'})
   }
+  function boom(){
+    dispatch({ type: 'boom'})
+  }
 
   return (
     <div>
@@ -46,6 +51,7 @@ function UseReducer() {
       <button onClick={increment}>+</button>
       <button onClick={multiply}>x</button>
       <button onClick={reset}>0</button>
+      <button onClick={boom}>boom</button>
     </div>
   );
 }

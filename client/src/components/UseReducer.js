@@ -9,7 +9,7 @@ function reducer(state, action) {
     case 'multiply':
       return {count: state.count *2 }
     case 'reset':
-      return {count: state.count +5 }
+      return {count: state.count =0 }
     default:
       return state 
   }
@@ -36,7 +36,7 @@ function UseReducer() {
   }
 
   function reset(){
-    dispatch({ type: 'zero'})
+    dispatch({ type: 'reset'})
   }
 
   return (

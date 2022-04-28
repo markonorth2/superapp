@@ -64,7 +64,7 @@ function UseReducer() {
       <button onClick={divide}>/</button>
       <button onClick={reset}>0</button>
       <button onClick={boom}>boom</button>
-      <butoon onClick={doom}>doom</butoon>
+      <button onClick={doom}>doom</button>
      
     </div>
   );

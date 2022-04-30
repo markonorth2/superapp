@@ -18,6 +18,8 @@ function reducer(state, action) {
       return {count: state.count -10000}
     case 'superdoom':
       return {count: state.count -1000000}
+    case 'superboom':
+      return {count: state.count +1000000}
     default:
       return state 
   }
@@ -49,6 +51,9 @@ function UseReducer() {
   function boom(){
     dispatch({ type: 'boom'})
   }
+  function superboom(){
+    dispatch({ type: 'superboom'})
+  }
   function divide(){
     dispatch({ type: 'divide'})
   }
@@ -58,6 +63,7 @@ function UseReducer() {
   function superdoom(){
     dispatch({ type: 'superdoom'})
   }
+  
 
 
   return (
@@ -71,6 +77,8 @@ function UseReducer() {
       <button onClick={boom}>boom</button>
       <button onClick={doom}>doom</button>
       <button onClick={superdoom}>superdoom</button>
+      <button onClick={superboom}>superboom</button>
+
      
     </div>
   );

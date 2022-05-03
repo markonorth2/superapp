@@ -8,6 +8,8 @@ function reducer(state, action) {
       return {count: state.count -1 }
     case 'multiply':
       return {count: state.count *2 }
+    case 'bigMultiply':
+      return {count: state.count *4 }
     case 'divide':
       return {count: state.count /2} 
     case 'reset':
@@ -45,6 +47,10 @@ function UseReducer() {
     dispatch({ type: 'multiply'})
   }
 
+  function bigMultiply() {
+    dispatch({ type: 'bigMultiply'})
+  }
+
   function reset(){
     dispatch({ type: 'reset'})
   }
@@ -72,6 +78,7 @@ function UseReducer() {
       <span>{state.count}</span>
       <button onClick={increment}>+</button>
       <button onClick={multiply}>x</button>
+      <button onClick={bigMultiply}>x4</button>
       <button onClick={divide}>/</button>
       <button onClick={reset}>0</button>
       <button onClick={boom}>boom</button>

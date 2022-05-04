@@ -57,15 +57,19 @@ function UseReducer() {
   function boom(){
     dispatch({ type: 'boom'})
   }
+
   function superboom(){
     dispatch({ type: 'superboom'})
   }
+
   function divide(){
     dispatch({ type: 'divide'})
   }
+
   function doom(){
     dispatch({ type: 'doom'})
   }
+  
   function superdoom(){
     dispatch({ type: 'superdoom'})
   }

@@ -7,7 +7,7 @@ function Test() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 2)}>
+      <button onClick={() => setCount(count + 5)}>
         Click me!!!!!!
       </button>
     </div>
